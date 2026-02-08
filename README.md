@@ -58,5 +58,18 @@ AI-powered Loan Eligibility & Risk Assessment Chatbot built using **FastAPI** an
 
 ---
 
-## 🏗 Architecture
+---
+
+## 📚 Project Documentation
+
+Detailed technical documentation is available in the `/docs` folder:
+
+- 📘 [Project Overview](docs/overview.md)
+- 🏗 [System Architecture](docs/architecture.md)
+- 🧮 [Financial Model & Risk Logic](docs/financial-model.md)
+- 🔌 [API Documentation](docs/api-docs.md)
+- 🚀 [Deployment Guide](docs/deployment.md)
+
+---
+
 
