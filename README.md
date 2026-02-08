@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<h2>🤖 Smart AI Loan Underwriting System</h2>
+<h2>🤖Virtual Bank Assistant - Loan AI</h2>
 
 <p>
 AI-powered Loan Eligibility & Risk Assessment Chatbot built using FastAPI and Groq LLM.
