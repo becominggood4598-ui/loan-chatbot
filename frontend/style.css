@@ -5,12 +5,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;  
 }
 
 /* Glassmorphism */
 .chat-wrapper {
     width: 480px;
+    max-width: 95%;   
     padding: 25px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
@@ -19,8 +20,11 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Make layout stable */
 .robot-container {
     margin-bottom: 10px;
 }
@@ -44,7 +48,9 @@ body {
     50% { transform: translateY(-5px); }
 }
 
+/* Chat Box Improvement */
 .chat-box {
+    flex: 1;                      
     height: 300px;
     overflow-y: auto;
     border-radius: 10px;
@@ -52,12 +58,16 @@ body {
     margin: 15px 0;
     background: rgba(255,255,255,0.1);
     text-align: left;
+    scroll-behavior: smooth;     
 }
 
+/* Message bubbles */
 .bot, .user {
     padding: 8px 12px;
     margin: 8px 0;
     border-radius: 10px;
+    max-width: 80%;               
+    word-wrap: break-word;       
 }
 
 .bot {
@@ -67,10 +77,13 @@ body {
 .user {
     background: rgba(0,150,255,0.2);
     text-align: right;
+    margin-left: auto;          
 }
 
+/* Input area fix */
 .input-area {
     display: flex;
+    gap: 8px;                  
 }
 
 input {
@@ -78,16 +91,17 @@ input {
     padding: 10px;
     border-radius: 8px;
     border: none;
+    outline: none;             
 }
 
 button {
     padding: 10px 15px;
-    margin-left: 5px;
     background: #4CAF50;
     border: none;
     border-radius: 8px;
     color: white;
     cursor: pointer;
+    transition: 0.2s ease;       
 }
 
 button:hover {
@@ -105,4 +119,20 @@ button:hover {
 
 .shake {
     animation: shake 0.5s;
+}
+
+/* Mobile optimization */
+@media (max-width: 500px) {
+    .chat-wrapper {
+        padding: 15px;
+    }
+
+    #robot {
+        width: 100px;
+        height: 100px;
+    }
+
+    .chat-box {
+        height: 250px;
+    }
 }
