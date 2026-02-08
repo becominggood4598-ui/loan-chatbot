@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Bank Assistant - Loan AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+
+<div class="chat-wrapper">
+
+    <div class="robot-container">
+
+        <svg id="robot" width="130" height="130" viewBox="0 0 200 200">
+            <rect id="head" x="40" y="40" width="120" height="100" rx="20" fill="#4CAF50"/>
+
+            <circle class="eye" cx="75" cy="80" r="10" fill="white"/>
+            <circle class="eye" cx="125" cy="80" r="10" fill="white"/>
+
+            <circle id="leftPupil" cx="75" cy="80" r="5" fill="black"/>
+            <circle id="rightPupil" cx="125" cy="80" r="5" fill="black"/>
+
+            <path id="mouth" d="M70 115 Q100 140 130 115" stroke="white" stroke-width="4" fill="transparent"/>
+        </svg>
+
+        <h2>Virtual Bank Assistant - Smart Loan Assistant</h2>
+    </div>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your answer..." />
+        <button onclick="handleInput()">Send</button>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>

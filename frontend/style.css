@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism */
+.chat-wrapper {
+    width: 480px;
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+}
+
+.robot-container {
+    margin-bottom: 10px;
+}
+
+#robot {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Blinking */
+.eye {
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0%, 95%, 100% { r: 10; }
+    97% { r: 1; }
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+    background: rgba(255,255,255,0.1);
+    text-align: left;
+}
+
+.bot, .user {
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+.bot {
+    background: rgba(0,255,100,0.2);
+}
+
+.user {
+    background: rgba(0,150,255,0.2);
+    text-align: right;
+}
+
+.input-area {
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2e7d32;
+}
+
+/* Shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
