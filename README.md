@@ -1,40 +1,52 @@
 ---
 
-# 🎥 Frontend Demo Preview
+# 💰 Virtual Bank Assistant - Loan AI
 
 <div align="center">
 
-<img src="https://via.placeholder.com/900x450/0f2027/FFFFFF?text=Virtual+Bank+Assistant+-+Loan+AI" width="100%" />
+<h2>🤖 Smart AI Loan Underwriting System</h2>
+
+<p>
+AI-powered Loan Eligibility & Risk Assessment Chatbot built using FastAPI and Groq LLM.
+</p>
 
 </div>
 
 ---
 
-## 🤖 Virtual Bank Assistant - Loan AI
+## 🎬 Frontend Demo Preview
 
 <div align="center">
 
-<table>
+<table width="100%" style="border-collapse: collapse;">
 <tr>
-<td width="50%">
+<td style="background-color:#0f2027; color:white; padding:20px; border-radius:15px;">
 
-### 💬 Chat-Based Loan Evaluation
+### 👋 Virtual Bank Assistant
 
-- Interactive chat interface  
-- Step-by-step input collection  
-- Real-time EMI calculation  
-- Smart AI explanation  
+💬 Hi! What is your monthly income (₹)?  
+👤 50000  
 
-</td>
+💬 What loan amount do you want (₹)?  
+👤 2000000  
 
-<td width="50%">
+💬 What is the loan tenure (months)?  
+👤 240  
 
-### 🧠 Financial Intelligence Engine
+💬 What is your CIBIL score?  
+👤 750  
 
-- FOIR Analysis  
-- LTI Risk Evaluation  
-- CIBIL Impact Modeling  
-- Risk Score Generation (0–100)
+---
+
+### 📊 Loan Result
+
+- **EMI:** ₹17,356  
+- **FOIR:** 34%  
+- **LTI:** 3.3  
+- **Risk Score:** 28 / 100  
+- **Status:** ✅ Approved  
+
+🎉 Congratulations! Your loan is financially safe and eligible.
 
 </td>
 </tr>
@@ -44,35 +56,17 @@
 
 ---
 
-## 🎨 UI Features
+## 🧠 Financial Intelligence Engine
 
-✔ Glassmorphism Design  
-✔ Animated AI Robot  
-✔ Blinking Eyes & Floating Motion  
-✔ Approval Confetti Effect  
-✔ Rejection Shake Animation  
-✔ Fully Responsive Layout  
-
----
-
-## 📸 Application Screenshots
-
-<div align="center">
-
-<img src="screenshots/home.png" width="45%" />
-<img src="screenshots/approved.png" width="45%" />
-
-<br><br>
-
-<img src="screenshots/rejected.png" width="45%" />
-
-</div>
+| Feature | Description |
+|----------|-------------|
+| EMI Calculation | Standard banking EMI formula |
+| FOIR Analysis | Fixed Obligation to Income Ratio |
+| LTI Evaluation | Loan to Annual Income Ratio |
+| Risk Modeling | Custom 0–100 Risk Score |
+| AI Explanation | Groq LLM powered reasoning |
 
 ---
 
-## 🚀 Live Frontend
+## 🏗 Architecture
 
-🔗 **GitHub Pages Demo:**  
-https://yourusername.github.io/loan-chatbot/
-
----
