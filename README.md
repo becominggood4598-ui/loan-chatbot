@@ -1,5 +1,3 @@
----
-
 # Virtual Bank Assistant - Loan AI
 
 AI-powered Loan Eligibility & Risk Assessment Chatbot built using **FastAPI** and **Groq LLM**, designed according to Indian banking standards.
